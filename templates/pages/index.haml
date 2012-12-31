@@ -1,0 +1,8 @@
+%section#articles
+  - for article in articles
+    %article.post
+      %header
+        %h1
+          ="#{article.date} in"
+          %a{:href => "https://maps.google.com.au/maps?q=#{article.location}"}= article.location
+      %section.content= article.body
