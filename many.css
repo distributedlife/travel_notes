@@ -1,0 +1,99 @@
+html, body { width: 100%; }
+
+#wrapper {
+  max-width: 1100px;
+  min-width: 800px;
+  margin: 50px auto;
+}
+
+#wrapper2 {
+  max-width: 1100px;
+  min-width: 800px;
+  margin: 50px auto;
+  margin-left: 440px;
+}
+
+#left {
+  width: 400px;
+  position: fixed;
+  left: 10px; top: 10px;
+}
+
+ul {
+  list-style:none;
+}
+
+a {
+  font-family: 'Nothing You Could Do', cursive;
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+}
+
+#left li {
+  width: 100%;
+}
+
+#wrapper h2 {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 0;
+  text-align: center;
+}
+
+h2 span {
+  color: white;
+  font-family: 'Nothing You Could Do', cursive;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 2em;
+  display: block;
+  margin: 15px;
+}
+
+.selected {
+  color: green;
+}
+
+.pin {
+  position: relative;
+  max-width: 640px;
+  max-height: 640px;
+  display: inline-block;
+  background: #FEFEFE;
+  border: 2px solid #FAFAFA;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  margin: 5px;
+  padding: 15px;
+  opacity: 1;
+}
+
+.pin-landscape {
+  position: relative;
+  max-width: 640px;
+  max-height: 640px;
+  display: inline-block;
+  background: #FEFEFE;
+  border: 2px solid #FAFAFA;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  margin: 5px;
+  padding: 15px;
+  opacity: 1;
+}
+
+.pin img {
+  max-width: 480px;
+  max-height: 640px;
+}
+
+.pin-landscape img {
+  max-width: 640px;
+  max-height: 480px;
+}
+
+.pin p {
+  font: 12px/18px 'Nothing You Could Do' cursive;
+  color: #333;
+  margin: 0;
+}
