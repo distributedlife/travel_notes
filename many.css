@@ -115,3 +115,22 @@ h2 span {
   color: #333;
   margin: 0;
 }
+
+.quote {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  letter-spacing: -2px;
+  line-height: 48px;
+  color: #222;
+  font-weight: bold;
+  margin: 3em 2em;
+}
+
+.passage {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #222;
+  margin: 3em 0;
+  line-height: 1.5em;
+  width: 36em;
+  font-size: 1.2em;
+}
