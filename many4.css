@@ -1,0 +1,99 @@
+.cb-slideshow,
+.cb-slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.cb-slideshow:after {
+    content: '';
+}
+.cb-slideshow span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    animation: opacity 1s ease-in-out infinite 0s;
+}
+
+.hidden {
+  opacity:0;
+}
+
+.opaque {
+  opacity:1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1);
+}
+
+.cb-slideshow span:nth-child(1) {
+  background-image: url(lima.jpg);
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+}
+
+.cb-slideshow span:nth-child(2) {
+    background-image: url(arequipa.jpg);
+}
+.cb-slideshow li:nth-child(3) span {
+    background-image: url(cusco.jpg);
+}
+.cb-slideshow li:nth-child(4) span {
+    background-image: url(inka.jpg);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+}
+.cb-slideshow li:nth-child(5) span {
+    background-image: url(amazonas.jpg);
+}
+.cb-slideshow li:nth-child(6) span {
+    background-image: url(iquitos.jpg);
+}
+
+@-webkit-keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	    -webkit-animation-timing-function: ease-in;
+	}
+	8% {
+	    opacity: 1;
+	    -webkit-transform: scale(1.05);
+	    -webkit-animation-timing-function: ease-out;
+	}
+	17% {
+	    opacity: 1;
+	    -webkit-transform: scale(1.1);
+	}
+	22% {
+		opacity: 0;
+		-webkit-transform: scale(1.1) translateY(-20%);
+	}
+	25% {
+	    opacity: 0;
+	    -webkit-transform: scale(1.1) translateY(-100%);
+	}
+	100% { opacity: 0 }
+}
+
+/* Show at least something when animations not supported */
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+@media screen and (max-width: 1140px) { 
+	.cb-slideshow li div h3 { font-size: 100px }
+}
+@media screen and (max-width: 600px) { 
+	.cb-slideshow li div h3 { font-size: 50px }
+}
+
